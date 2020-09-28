@@ -1,6 +1,8 @@
-#include <iostream>
+#include "App.h"
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::cout << "Hello World!\n";
+    BFI::App app(argv[1]);
+    app.run();
+    return 0;
 }
